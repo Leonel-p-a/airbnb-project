@@ -8,7 +8,7 @@ const ButtonIcon = (props: ButtonIconProps) => {
 		<>
 			<button className="
 			rounded-xl
-			border-2
+			border-2 border-gray-200
 			flex
 			gap-2
 			items-center
