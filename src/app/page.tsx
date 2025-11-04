@@ -1,3 +1,4 @@
+import Accomodations from "@/widgets/Accomodations";
 import NavigationTab from "@/widgets/NavigationTab";
 import SearchBar from "@/widgets/SearchBar";
 import TopBar from "@/widgets/TopBar";
@@ -12,8 +13,9 @@ export default function Home() {
 
             <hr className="my-3 text-gray-200" />
 
-            <main className="container mx-auto px-3">
+            <main className="container mx-auto px-10">
                 <NavigationTab />
+                <Accomodations />
             </main>
 
             <footer className="container max-w-7xl mx-auto px-3">
