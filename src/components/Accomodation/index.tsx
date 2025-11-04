@@ -22,7 +22,7 @@ const Accomodation = ( { children, location, host, date, price, rating, preferre
             </div>
             <IconHeartFilled className="stroke-white opacity-80 absolute top-2.5 right-1"
                     aria-label="Favoritos"
-                    size={30}
+                    size={25}
             />
             {children}
             <figcaption className="pt-2">
