@@ -13,13 +13,17 @@ interface AccomodationProps {
 const Accomodation = ( { children, location, host, date, price, rating, preferred }: AccomodationProps ) => {
     return (
         <figure className="relative">
-            <div className="p-2 absolute w-full flex gap-3 justify-between items-center">
-                {preferred && <span className="bg-white border-1 border-gray-400 rounded-xl px-4 py-1 font-semibold text-xs">Preferido dos Hóspedes</span>}
-                <IconHeartFilled className="stroke-white opacity-80"
+            <div className="p-2 absolute">
+                { preferred && (
+                    <span className="bg-white rounded-2xl px-4 py-1 my-1 font-semibold text-[0.6875rem] xl:w-28 line-clamp-2">
+                        Preferido dos Hóspedes
+                    </span>
+                )}
+            </div>
+            <IconHeartFilled className="stroke-white opacity-80 absolute top-2.5 right-1"
                     aria-label="Favoritos"
                     size={30}
-                />
-            </div>
+            />
             {children}
             <figcaption className="pt-2">
                 <div className="flex justify-between">
