@@ -6,7 +6,7 @@ interface AccomodationProps {
     host: string,
     date: string,
     price: number,
-    rating: number
+    rating: number,
     preferred: boolean
 }
 

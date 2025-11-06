@@ -2,6 +2,7 @@
 
 import Accomodation from "@/components/Accomodation";
 import Image from "next/image";
+import Link from "next/link";
 
 const accomodationsList = [
     {
@@ -3022,21 +3023,23 @@ const Accomodations = () => {
         <section className="py-6 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
             {accomodationsList.map((item, index) => (
                 <div key={index}>
-                    <Accomodation
-                        location={item.location.description}
-                        host={item.host}
-                        date={item.date}
-                        price={item.price}
-                        rating={item.rating}
-                        preferred={item.hasBadge}
-                    >
-                        <Image className="w-full aspect-square object-cover rounded-2xl"
-                            src={item.photos[0].source}
-                            alt={item.photos[0].description}
-                            width={300}
-                            height={300}
-                        />
-                    </Accomodation>
+                    <Link href={item.slug}>
+                        <Accomodation
+                            location={item.location.description}
+                            host={item.host}
+                            date={item.date}
+                            price={item.price}
+                            rating={item.rating}
+                            preferred={item.hasBadge}
+                        >
+                            <Image className="w-full aspect-square object-cover rounded-2xl"
+                                src={item.photos[0].source}
+                                alt={item.photos[0].description}
+                                width={300}
+                                height={300}
+                            />
+                        </Accomodation>
+                    </Link>
                 </div>
             ))}
         </section>
