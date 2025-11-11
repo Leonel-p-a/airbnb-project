@@ -1,3 +1,5 @@
+import AccomodationDetails from "@/widgets/AccomodationDetails";
+import AccomodationTestimonials from "@/widgets/AccomodationTestimonials";
 import Footer from "@/widgets/Footer";
 import Gallery from "@/widgets/Gallery";
 import SearchBar from "@/widgets/SearchBar";
@@ -195,13 +197,13 @@ const accommodation = {
     ]
 }
 
-interface PageProps {
-    id: string
-}
+// interface PageProps {
+//     id: string
+// }
 
-export default async function Page({ params }: { params: Promise<PageProps> }) {
-    const data = await params;
-    
+export default async function Page(/*{ params }: { params: Promise<PageProps> }*/) {
+    // const data = await params;
+
     return (
         <div>
             <header className="container lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto py-6 px-3">
@@ -212,6 +214,11 @@ export default async function Page({ params }: { params: Promise<PageProps> }) {
             <main className="container mx-auto px-10 py-6">
                 <h1 className="text-2xl font-semibold pb-3">{accommodation.title}</h1>
                 <Gallery photos={accommodation.photos} />
+
+                <div className="flex flex-col md:flex-row">
+                    <AccomodationDetails />
+                    <AccomodationTestimonials />
+                </div>
             </main>
 
             <footer className="container bg-gray-200">

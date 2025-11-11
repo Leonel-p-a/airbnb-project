@@ -10,7 +10,7 @@ interface AccomodationProps {
     preferred: boolean
 }
 
-const Accomodation = ( { children, location, host, date, price, rating, preferred }: AccomodationProps ) => {
+const Accommodation = ( { children, location, host, date, price, rating, preferred }: AccomodationProps ) => {
     return (
         <figure className="relative">
             <div className="p-2 absolute">
@@ -44,4 +44,4 @@ const Accomodation = ( { children, location, host, date, price, rating, preferre
     )
 }
 
-export default Accomodation;
+export default Accommodation;
