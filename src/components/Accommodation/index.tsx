@@ -15,7 +15,7 @@ const Accommodation = ( { children, location, host, date, price, rating, preferr
         <figure className="relative">
             <div className="p-2 absolute">
                 { preferred && (
-                    <span className="bg-white rounded-2xl px-4 py-1 my-1 font-semibold text-[0.6875rem] xl:w-28 line-clamp-2">
+                    <span className="bg-white rounded-2xl px-4 py-1 my-1 font-semibold text-[0.6rem] w-25 xl:w-28 line-clamp-2">
                         Preferido dos Hóspedes
                     </span>
                 )}

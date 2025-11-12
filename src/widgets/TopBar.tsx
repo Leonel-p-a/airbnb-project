@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const TopBar = () => {
 	return (
-		<div className="flex justify-between items-center">
+		<div className="flex flex-col sm:flex-row gap-5 justify-between items-center">
 			<Logo />
 
 			<nav className="flex gap-6">
@@ -23,8 +23,6 @@ const TopBar = () => {
 				)} >
 				Entrar
 			</ButtonIcon>
-
-
 		</div>
 	)
 }

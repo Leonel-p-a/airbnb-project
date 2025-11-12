@@ -23,7 +23,7 @@ const Accommodations = (props: AccomodationProps) => {
     }
 
     return (
-        <section className="py-6 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
+        <section className="py-6 grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7">
             {accommodationsList.map((item, index) => (
                 <div key={item.id || index}>
                     <Link href={item.slug || '#'}>

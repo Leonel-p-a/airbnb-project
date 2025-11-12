@@ -21,8 +21,9 @@ const NavigationTab = (props: NavigationTabProps) => {
             {/* Navegação de filtros */}
             <Swiper
                 space-between={10}
-                slidesPerView={3}
+                slidesPerView={'auto'}
                 breakpoints={{
+                    320: { slidesPerView: 2 },
                     640: { slidesPerView: 3 },
                     764: { slidesPerView: 4 },
                     1024: { slidesPerView: 6 },
@@ -39,7 +40,7 @@ const NavigationTab = (props: NavigationTabProps) => {
                             width={24}
                             height={24}
                             />
-                            <span className='text-sm'>{icon.description}</span>
+                            <span className='text-xs'>{icon.description}</span>
                         </Link>
                     </SwiperSlide>
                 ))}

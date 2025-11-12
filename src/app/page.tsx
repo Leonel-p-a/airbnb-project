@@ -7,8 +7,6 @@ import TopBar from "@/widgets/TopBar";
 
 export default async function Home() {
     const data = await fetchData();
-    console.log(data)
-    console.log(data.accommodation)
 
     return (
         <>
