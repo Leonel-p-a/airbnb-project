@@ -10,11 +10,18 @@ import {
     IconAlarmSmoke,
     IconDog
 } from '@/assets/icons';
+import { AccommodationsType } from '@/types/AirbnbData';
 
-const AccomodationDetails = () => {
+interface AccommodationDetailsProps {
+    accommodation: AccommodationsType
+}
+
+const AccommodationDetails = (props: AccommodationDetailsProps) => {
+    const accommodation = props.accommodation;
+
     return (
         <div className="w-full py-4 ">
-            <h2 className="text-2xl font-semibold pb-1">Espaço inteiro: casa de campo em Minas</h2>
+            <h2 className="text-2xl font-semibold pb-1">{accommodation.location.description}</h2>
 
             <ul className="flex gap-2">
                 <li className="hover:underline">10 hóspedes</li>
@@ -74,4 +81,4 @@ const AccomodationDetails = () => {
     )
 }
 
-export default AccomodationDetails;
+export default AccommodationDetails;

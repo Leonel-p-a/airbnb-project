@@ -20,6 +20,7 @@ export interface AccommodationsType {
 export interface Testimonials {
     id: string,
     name: string,
+    image: string,
     comment: string,
     rating: number,
     customerTime: number,

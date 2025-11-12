@@ -1,5 +1,5 @@
 import { fetchData } from "@/utils/api";
-import Accommodations from "@/widgets/Accomodations";
+import Accommodations from "@/widgets/Accommodations";
 import Footer from "@/widgets/Footer";
 import NavigationTab from "@/widgets/NavigationTab";
 import SearchBar from "@/widgets/SearchBar";
@@ -24,7 +24,7 @@ export default async function Home() {
                 <Accommodations accommodation={data.accommodation} />
             </main>
 
-            <footer className="container bg-gray-200">
+            <footer className="container w-full mx-auto bg-gray-200">
                 <Footer />
             </footer>
         </>

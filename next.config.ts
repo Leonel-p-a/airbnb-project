@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
         hostname: 'web.codans.com.br'
       },
     ],
-  }
+  },
+  devIndicators: false
 };
 
 export default nextConfig;
